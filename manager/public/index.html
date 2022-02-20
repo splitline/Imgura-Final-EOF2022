@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>[A&D] Imgura Final</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="hidden" id="auth-panel">
+            <h1>Input your CTFd access token</h1>
+            <input type="text" id="ctfd-token">
+            <button>Submit</button>
+	    <p>You can get your CTFd access token from <a href="http://eof.ais3.org/settings#tokens">here</a>.</p>
+        </div>
+        <div class="hidden" id="manage-panel">
+            <div class="landing">
+                <h1>[A&D] Imgura Final</h1>
+                <nav>
+                    <a href="/">[Home]</a> |
+                    <a href="/rule.txt">[Rule]</a> |
+                    <a href="/teams">[Teams]</a> |
+                    <a href="/scoreboard.html">[Scoreboard]</a>
+                </nav>
+                <div id="team-info">
+                    <p>
+                        ID: <span id="team-id"></span> /
+                        Name: <span id="team-name"></span> /
+                        Token: <span id="team-token"></span>
+                    </p>
+                    <p><strong>Your instance:</strong> <span id="instance-url"></span></p>
+                    <p><strong>Last restart:</strong> <span id="last-recreate"></span> </p>
+                    <p><strong>Last update WAF:</strong> <span id="last-update"></span></p>
+                </div>
+            </div>
+            <hr>
+            <div class="tools">
+                <h3>Submit Flag 🏴‍☠️</h3>
+                <p>提交其他隊伍機器上的 flag，建議直接使用 API，畢竟你有 25 隊要打。</p>
+                <p>Please submit flags you stole from other teams. We recommend you use the flag submission API instead of submitting flags manually. The API usage is illustrated below.</p>
+                <div>
+                    <strong>API usage: </strong><div id="submit-flag-api"></div>
+                    <br>
+                    <form id="submit-flag">
+                        <input type="text" name="team" placeholder="Team ID">
+                        <input type="text" name="flag" placeholder="Flag">
+                        <button>Submit</button>
+                    </form>
+                </div>
+                <br>
+                <h3>Restart Instance 🔄</h3>
+                <p>每 15 分鐘你可以重開你的機器，之後 5 分鐘內（1 回合）無法獲得防禦分。</p>
+                <p>You have one chance to restart your instance every 15 minutes. But you cannot get defense points in the round you restart your instance.</p>
+                <p><a id="restart-instance">[ Restart instance ]</a></p>
+                <br>
+                <h3>Update WAF 🛡️</h3>
+                <p>每 30 秒你可以更新你的 WAF（最多 255 字元），之後 5 分鐘內（1 回合）無法獲得防禦分。注意：你的 WAF 是公開的，可以被所有隊伍看見。</p>
+		<p>You can update your WAF rule every 30 seconds. The length limit of your WAF rule is 255 characters. But you cannot get defense points in the round you update your WAF rule. Note that your WAF rule is publicly readable. All other teams can see it.</p>
+                <form id="update-waf">
+                    <p><textarea name="waf" placeholder="WAF code" maxlength="255"></textarea></p>
+                    <button>Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Copyright © 2022 splitline@EOF2022，寫這個整個東東有夠肝。
+    </footer>
+    <script src="/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+{
+    "require": {
+        "twig/twig": "^3.0",
+        "hidehalo/nanoid-php": "^1.1"
+    }
+}

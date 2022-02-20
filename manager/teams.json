@@ -1,0 +1,132 @@
+{
+    "1": {
+        "id": 1,
+        "name": "(NPC)",
+        "token": "a00179be79437d8e2f5137b83ffd6841"
+    },
+    "18": {
+        "id": 18,
+        "name": "meow?",
+        "token": "4dd8e854cfa6a0fb44e02eda78f00e31"
+    },
+    "19": {
+        "id": 19,
+        "name": "KFC\u6230\u968a",
+        "token": "0f2ab38642622676be4b98ff48fe90a2"
+    },
+    "20": {
+        "id": 20,
+        "name": "sorryLYB",
+        "token": "c2c621f238d891614a08a7c3329b8d44"
+    },
+    "21": {
+        "id": 21,
+        "name": "LYB",
+        "token": "fd485614f002f796c5f339d5eb23b3c5"
+    },
+    "22": {
+        "id": 22,
+        "name": "EOF2022",
+        "token": "a905216e137d838ae9add65838736216"
+    },
+    "23": {
+        "id": 23,
+        "name": "\u5ead\u6d69\u306e\u7c89\u7d72\u5718 X nlnlOeO",
+        "token": "715f9e20179b8d8f14a87913ad0388af"
+    },
+    "24": {
+        "id": 24,
+        "name": "K1a\u7684\u7121\u7de3\u5c0f\u5925\u4f34-\u535a\u5f08\u5927\u5e2b",
+        "token": "9d1dc9cd0330d6b5d040248500db188a"
+    },
+    "25": {
+        "id": 25,
+        "name": "\u6253\u5b8c\u8d95\u5feb\u958b\u6d3e\u968a",
+        "token": "9f847d12668f7bcb094e97afc821f6a2"
+    },
+    "26": {
+        "id": 26,
+        "name": "AtLas9",
+        "token": "53fb7e4822ccc73548954be13d67e98e"
+    },
+    "27": {
+        "id": 27,
+        "name": "PUIPUI",
+        "token": "40986e5b9f9a07d25e1de2d3f700b913"
+    },
+    "28": {
+        "id": 28,
+        "name": "ctfdonuts",
+        "token": "7268f19728c3692f0c5908290c7d40d7"
+    },
+    "29": {
+        "id": 29,
+        "name": "\u5225\u627e\u6230\u72af\u627e\u56de\u968a\u53cb",
+        "token": "cd962571230c5f2c6fc50fddf39ccc66"
+    },
+    "30": {
+        "id": 30,
+        "name": "\u8aa4\u5165\u6b67\u9014",
+        "token": "60021f63cbea90d0d853c357445aeb1a"
+    },
+    "31": {
+        "id": 31,
+        "name": "maple \u6c92\u8fa6\u6cd5\u8ddf\u6211\u5011\u4e00\u7d44",
+        "token": "127fa7b655296dd9350fd8c07d1b8bef"
+    },
+    "32": {
+        "id": 32,
+        "name": "\u53ea\u6703\u6253Reverse",
+        "token": "df7902e64f9040699bea2c41d2fff2b0"
+    },
+    "33": {
+        "id": 33,
+        "name": "TWICexception",
+        "token": "b48672939940c5bc703611ecd0f3c528"
+    },
+    "34": {
+        "id": 34,
+        "name": "e\u0335\u031b\u033e\u0300\u0313\u0308\u0315\u0328\u032b\u0324\u0339\u034e\u0355\u0327\u031e\u0353r\u0336\u0314\u0346\u0344\u0351\u033d\u034b\u0314\u033f\u0307\u0331\u032a\u031c\u0347\u0316\u0354\u035c\u0354\u032br\u0336\u031a\u031a\u033d\u0305\u0350\u034a\u033d\u030c\u0309\u0357\u032f\u0359\u0354o\u0335\u030f\u035d\u0360\u030b\u030e\u030e\u033f\u0307\u033f\u0302\u031c\u0359\u0332\u035a\u0332\u0320\u032e\u0321r\u0336\u030f\u0312\u0315\u0350\u0310\u035b\u034a\u035d\u032c\u031d\u0327",
+        "token": "d482aecca4e4c858533fc4d995c4d92c"
+    },
+    "35": {
+        "id": 35,
+        "name": "(\u2267\u2207\u2266)b",
+        "token": "f3dde996b82d74f0fafadc95324c9e39"
+    },
+    "36": {
+        "id": 36,
+        "name": "\u767e\u5bb6\u59d3\u6230\u968a",
+        "token": "ef713294203dda7c173b47971485d881"
+    },
+    "37": {
+        "id": 37,
+        "name": "NemoNemo",
+        "token": "91ba28d955e164f0c3b7c824cc2263de"
+    },
+    "38": {
+        "id": 38,
+        "name": "[GCC] 3",
+        "token": "750925bccc8d349cd67ed1fc2998770b"
+    },
+    "39": {
+        "id": 39,
+        "name": "[GCC] Vanadium",
+        "token": "1f9172b478b2e9915b9c88c79867747f"
+    },
+    "40": {
+        "id": 40,
+        "name": "[GCC] 2",
+        "token": "204d5285c4add0c830f6ada0e29df37a"
+    },
+    "41": {
+        "id": 41,
+        "name": "[GCC] Miao-ment",
+        "token": "6d38884455f60b3fd75d3c504d36fe6b"
+    },
+    "42": {
+        "id": 42,
+        "name": "[GCC] Super Mario Party",
+        "token": "f322bb5ca0ecdeedd758204be5d0d423"
+    }
+}

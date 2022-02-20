@@ -1,0 +1,58 @@
+# Rule
+
+## Basic information
+
+- Each round lasts for 5 minutes.
+- Service port number for each team is {30000 + CTFd_team_id}
+- Port 30001 is used by an NPC. It will never have WAF or restart.
+- You can gain up to ~2700 points in this challenge in total.
+
+## TL;DR
+
+- **Attack:** 找到洞，打出能拿到全場各隊 flag 的 exploit，然後提交 flag，拿越多 flag 越多分
+- **Defense:** 寫 WAF 防止別隊打你，防下來所有的攻擊，分數就是你的（不能上那種 ban 特定使用者、IP 等的 WAF，被發現會有 penalty；不要當雞巴人）
+- 其他重要的規則：都寫在首頁那些功能介紹上ㄌ
+- **Service check:** 預設 docker 跑起來正常使用會動的功能都要能動。
+
+- **How to get attack points**: Find out the vulnerability and steal flags from other teams and submit them via our welcome page or API. The more flags you submit, the more points you get.
+- **How to get defense points**: Write WAF rules to prevent your flags from being stolen by other teams. Note that your WAF rule cannot drop requests from specific users or IP addresses. Violating this rule incurs penalties to your team scores. Don't be a dick.
+- ** Service check **: All services brought up by default should work correctly.
+
+---
+
+## Scoring
+
+- Attack point
+    - CTFd score = round(FLAG_NUM * 0.6)
+    - It means that one team can get 15 points at most in each round.
+    - In each round, the challenge system regenerates the flag for each team at the beginning of the round. The flag is only valid in this round.
+
+- Defense point
+    - One team can get 7 defense points in a round if all the following conditions are satisfied.
+        1. The team's service is not being attacked.
+        2. At least one other team is being attacked.
+        3. All default services pass the service check.
+        4. The team did NOT restart the instance nor update WAF rules.
+
+- In short, one team can get up to 22 points (15 attack points + 7 defense points) on CTFd in each round.
+
+## WAF
+
+- You can update WAF rules to defend against attacks.
+- Once you update your WAF rule, you cannot get defense points in the round you updating WAF rules.
+- You can download the latest WAF rules of other teams' services.
+- The following implementations are **NOT** allowed in your WAF rules:
+1. Allow or drop specific users, IP addresses, or user-agent.
+2. Code obfuscations that prevent other teams from reading your WAF rule.
+
+Please report to the CTF organizers if you find other teams violating the rules.
+
+## Service Check
+- All the functions for normal uses should always work (including the admin page)
+- You should not change default accounts' data ((username, password etc.)).
+- Service response time must be less than 3s
+
+> Some of the rules are borrowed from 2020 HITCON × Balsn CTF.
+> author: splitline
+
+

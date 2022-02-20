@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Login / Register{% endblock %}
+{% block content %}
+
+<div class="columns">
+    <div class="column has-text-centered">
+        <h1 class="title" style="color: ghostwhite;">Login / Register</h1><br>
+    </div>
+</div>
+<!-- Login Form -->
+
+<div class="columns">
+    <div class="column is-4 is-offset-4">
+        {% if error == 1 %}
+        <p>Username should be <code>/^[a-z][a-z0-9_]{4,20}$/i</code>.</p>
+        {% endif %}
+        {% if error == 2 %}
+        <p>Incorrect crenditials.</p>
+        {% endif %}
+        <form action="/login{{ redirect ? '?redirect='~redirect : '' }}" method="post">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" placeholder="Your Username" name="username" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" placeholder="Your Password" name="password">
+                </div>
+            </div>
+            <button class="button is-block is-info is-large is-fullwidth">
+                Login <i class="fa fa-sign-in" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

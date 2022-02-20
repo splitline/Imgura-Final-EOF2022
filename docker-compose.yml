@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  main:
+    build: .
+    entrypoint: /init.sh
+    ports:
+      - "8000:8000"
+      - "30000-30100:30000-30100"
+    volumes:
+      - ./service:/service
+      - ./manager:/manager
+      - ./logs:/logs
+    privileged: true
+    environment:
+      - CTFD_HOST=http://eof.ais3.org
+      - CHALLENGE_ID=6
+      - CHALLENGE_TOKEN=d3c63fb612178f63733dd84e03268546

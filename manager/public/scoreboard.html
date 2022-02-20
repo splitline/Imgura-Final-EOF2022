@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Scoreboard</title>
+</head>
+
+<body>
+    <h1>Scoreboard</h1>
+    <p>Last round: <span id="last-round"></span></p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Team</th>
+                <th>Attack</th>
+                <th>Defense</th>
+                <th>Service Check</th>
+            </tr>
+        </thead>
+        <tbody id="scoreboard">
+
+        </tbody>
+    </table>
+    <div>
+        <p>About Service Check</p>
+        <ul>
+            <li>Alive: Service passed the check</li>
+            <li>Down: Service did NOT pass the check</li>
+            <li>¯\_(ツ)_/¯: No one got attacked / Restart instance / Update WAF</li>
+        </ul>
+    </div>
+
+    <script>
+        const status = {
+            true: 'Alive',
+            false: 'Down',
+            null: '¯\\_(ツ)_/¯'
+        };
+	const update = () => fetch('/scoreboard.json')
+            .then(response => {
+                if (response.ok) {
+                    return response.json();
+                }
+                document.getElementById('scoreboard').innerHTML = '<tr><td colspan="4">(No data)</td></tr>';
+            })
+            .then(({ round, teams }) => {
+                document.getElementById('last-round').innerText = round;
+                document.getElementById('scoreboard').innerHTML = Object.keys(teams)
+                    .map(id => {
+                        const team = teams[id];
+                        const attackPoints = Math.round(team.attack.length * 0.6);
+                        return `<tr>
+                        <td>${id} / ${team.name}</td>
+                        <td>${team.score.attack}
+                        ${team.attack.length ? `<abbr title="(${team.attack.length}) ${team.attack}">(+${attackPoints})</abbr>` : ''}
+                        </td>
+                        <td>${team.score.defense} ${team.defense ? '(+7)' : ''}</td>
+                        <td>${status[team.alive]}</td>
+                    </tr>`;
+                    }).join('');
+            });
+setInterval(()=>update(), 1000*60);
+window.onload = ()=>update();
+    </script>
+</body>
+
+</html>

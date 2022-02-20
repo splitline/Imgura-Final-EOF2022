@@ -1,0 +1,20 @@
+version: '3.5'
+
+services:
+  php:
+    build: .
+    ports:
+      - ${PORT}:80/tcp
+    volumes:
+      - ./files/flag_${TEAM_ID}:/flag:ro
+      - ./files/waf_${TEAM_ID}.php:/etc/waf.php:ro
+    depends_on:
+      - database
+
+  database:
+    image: mariadb:latest
+    volumes:
+      - ./db.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=p4ssw0rd
+      - MYSQL_DATABASE=imgura

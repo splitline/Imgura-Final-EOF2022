@@ -1,0 +1,106 @@
+{
+    "1": {
+        "attack": 0,
+        "defense": 7
+    },
+    "18": {
+        "attack": 901,
+        "defense": 434
+    },
+    "19": {
+        "attack": 562,
+        "defense": 105
+    },
+    "20": {
+        "attack": 460,
+        "defense": 56
+    },
+    "21": {
+        "attack": 466,
+        "defense": 119
+    },
+    "22": {
+        "attack": 1117,
+        "defense": 483
+    },
+    "23": {
+        "attack": 197,
+        "defense": 49
+    },
+    "24": {
+        "attack": 685,
+        "defense": 98
+    },
+    "25": {
+        "attack": 522,
+        "defense": 91
+    },
+    "26": {
+        "attack": 0,
+        "defense": 63
+    },
+    "27": {
+        "attack": 0,
+        "defense": 14
+    },
+    "28": {
+        "attack": 0,
+        "defense": 42
+    },
+    "29": {
+        "attack": 0,
+        "defense": 14
+    },
+    "30": {
+        "attack": 538,
+        "defense": 98
+    },
+    "31": {
+        "attack": 689,
+        "defense": 98
+    },
+    "32": {
+        "attack": 403,
+        "defense": 112
+    },
+    "33": {
+        "attack": 681,
+        "defense": 126
+    },
+    "34": {
+        "attack": 631,
+        "defense": 105
+    },
+    "35": {
+        "attack": 0,
+        "defense": 14
+    },
+    "36": {
+        "attack": 0,
+        "defense": 14
+    },
+    "37": {
+        "attack": 716,
+        "defense": 112
+    },
+    "38": {
+        "attack": 0,
+        "defense": 14
+    },
+    "39": {
+        "attack": 0,
+        "defense": 14
+    },
+    "40": {
+        "attack": 0,
+        "defense": 14
+    },
+    "41": {
+        "attack": 0,
+        "defense": 14
+    },
+    "42": {
+        "attack": 0,
+        "defense": 21
+    }
+}

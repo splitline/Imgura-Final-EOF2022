@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="section">
+    <div class="columns">
+        <div class="column has-text-centered">
+            <h1 class="title" style="color: ghostwhite;">Welcome, {{user.name}}!</h1><br>
+        </div>
+    </div>
+    <div class="row columns is-multiline">
+        {% for image in images %}
+        <div class="column is-4">
+            <a href="/view/{{image.nanoid}}">
+                <div class="card large image-card">
+                    <div class="card-image">
+                        <figure class="image">
+                            <img src="{{image.path}}" alt="Image">
+                        </figure>
+                    </div>
+                    <div class="card-content">
+                        <p class="title is-4 no-padding">{{image.nanoid}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+        {% if images|length == 0 %}
+        <div class="column is-12 has-text-centered" style="color: ghostwhite;">
+            <p class="title is-4 no-padding" style="color: ghostwhite;">You don't have any image yet.</p>
+            <p>Maybe <a href="/upload">upload</a> one?</p>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

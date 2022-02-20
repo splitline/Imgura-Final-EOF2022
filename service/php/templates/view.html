@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block title %}Image {{image.nanoid}}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="columns">
+        <div class="column is-8">
+            <div class="box">
+                <figure class="image">
+                    <img src="/{{image.path}}" alt="Image {{image.nanoid}}">
+                </figure>
+            </div>
+        </div>
+        <div class="column is-4">
+            <div class="box">
+                <div class="content has-text-white">
+                    <p>
+                        <strong>Image ID:</strong> {{image.nanoid}}
+                    </p>
+                    <p>
+                        <strong>Mime-Type:</strong> <span id="mime"></span>
+                    </p>
+                    <p>
+                        <strong>Image size</strong> <span id="dimensions"></span>
+                    </p>
+                    <p>
+                        <strong>File size:</strong> <span id="size"></span>
+                    </p>
+                    <p>
+                        <a href="/download/{{image.nanoid}}" class="button is-primary is-outlined">
+                            <span class="icon">
+                                <i class="fa fa-download" aria-hidden="true"></i>
+                            </span>
+                            <span>Download</span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}
+{{ parent() }}
+<script>
+    fetch('/api/image_info', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ image: '{{image.path}}' })
+    }).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        document.getElementById('mime').innerHTML = data.mime;
+        document.getElementById('size').innerHTML = data.size;
+        document.getElementById('dimensions').innerHTML = data.width + ' x ' + data.height;
+
+    });
+</script>
+{% endblock %}

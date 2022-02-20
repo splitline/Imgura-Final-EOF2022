@@ -1,0 +1,291 @@
+{
+    "round": "20220213-17-10",
+    "teams": {
+        "1": {
+            "id": 1,
+            "name": "(NPC)",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 7
+            }
+        },
+        "18": {
+            "id": 18,
+            "name": "meow?",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 901,
+                "defense": 434
+            }
+        },
+        "19": {
+            "id": 19,
+            "name": "KFC\u6230\u968a",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 562,
+                "defense": 105
+            }
+        },
+        "20": {
+            "id": 20,
+            "name": "sorryLYB",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 460,
+                "defense": 56
+            }
+        },
+        "21": {
+            "id": 21,
+            "name": "LYB",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 466,
+                "defense": 119
+            }
+        },
+        "22": {
+            "id": 22,
+            "name": "EOF2022",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 1117,
+                "defense": 483
+            }
+        },
+        "23": {
+            "id": 23,
+            "name": "\u5ead\u6d69\u306e\u7c89\u7d72\u5718 X nlnlOeO",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 197,
+                "defense": 49
+            }
+        },
+        "24": {
+            "id": 24,
+            "name": "K1a\u7684\u7121\u7de3\u5c0f\u5925\u4f34-\u535a\u5f08\u5927\u5e2b",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 685,
+                "defense": 98
+            }
+        },
+        "25": {
+            "id": 25,
+            "name": "\u6253\u5b8c\u8d95\u5feb\u958b\u6d3e\u968a",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 522,
+                "defense": 91
+            }
+        },
+        "26": {
+            "id": 26,
+            "name": "AtLas9",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 63
+            }
+        },
+        "27": {
+            "id": 27,
+            "name": "PUIPUI",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "28": {
+            "id": 28,
+            "name": "ctfdonuts",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 42
+            }
+        },
+        "29": {
+            "id": 29,
+            "name": "\u5225\u627e\u6230\u72af\u627e\u56de\u968a\u53cb",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "30": {
+            "id": 30,
+            "name": "\u8aa4\u5165\u6b67\u9014",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 538,
+                "defense": 98
+            }
+        },
+        "31": {
+            "id": 31,
+            "name": "maple \u6c92\u8fa6\u6cd5\u8ddf\u6211\u5011\u4e00\u7d44",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 689,
+                "defense": 98
+            }
+        },
+        "32": {
+            "id": 32,
+            "name": "\u53ea\u6703\u6253Reverse",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 403,
+                "defense": 112
+            }
+        },
+        "33": {
+            "id": 33,
+            "name": "TWICexception",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 681,
+                "defense": 126
+            }
+        },
+        "34": {
+            "id": 34,
+            "name": "e\u0335\u031b\u033e\u0300\u0313\u0308\u0315\u0328\u032b\u0324\u0339\u034e\u0355\u0327\u031e\u0353r\u0336\u0314\u0346\u0344\u0351\u033d\u034b\u0314\u033f\u0307\u0331\u032a\u031c\u0347\u0316\u0354\u035c\u0354\u032br\u0336\u031a\u031a\u033d\u0305\u0350\u034a\u033d\u030c\u0309\u0357\u032f\u0359\u0354o\u0335\u030f\u035d\u0360\u030b\u030e\u030e\u033f\u0307\u033f\u0302\u031c\u0359\u0332\u035a\u0332\u0320\u032e\u0321r\u0336\u030f\u0312\u0315\u0350\u0310\u035b\u034a\u035d\u032c\u031d\u0327",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 631,
+                "defense": 105
+            }
+        },
+        "35": {
+            "id": 35,
+            "name": "(\u2267\u2207\u2266)b",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "36": {
+            "id": 36,
+            "name": "\u767e\u5bb6\u59d3\u6230\u968a",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "37": {
+            "id": 37,
+            "name": "NemoNemo",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 716,
+                "defense": 112
+            }
+        },
+        "38": {
+            "id": 38,
+            "name": "[GCC] 3",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "39": {
+            "id": 39,
+            "name": "[GCC] Vanadium",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "40": {
+            "id": 40,
+            "name": "[GCC] 2",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "41": {
+            "id": 41,
+            "name": "[GCC] Miao-ment",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 14
+            }
+        },
+        "42": {
+            "id": 42,
+            "name": "[GCC] Super Mario Party",
+            "attack": [],
+            "defense": false,
+            "alive": null,
+            "score": {
+                "attack": 0,
+                "defense": 21
+            }
+        }
+    }
+}

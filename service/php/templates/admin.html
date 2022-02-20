@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+
+{% block content %}
+<div class="container has-text-white">
+    <div class="columns">
+        <div class="column has-text-centered">
+            <h1 class="title" style="color: ghostwhite;">Admin Panel</h1><br>
+            There are {{stats.user}} users and {{stats.image}} images.
+        </div>
+    </div>
+
+<h2 class="title is-4 has-text-white" >Users</h2>
+<table class="table is-fullwidth">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Username</th>
+            <th>Role</th>
+            <th>Promote</th>
+            <th>Backup</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for u in users %}
+        <tr>
+            <td>{{ u.id }}</td>
+            <td><a href="#">{{ u.name }}</a></td>
+            <td>{{ u.admin ? 'Admin' : 'User' }}</td>
+            <td>
+                <form action="/admin/give-admin" method="post">
+                    <input type="hidden" name="user_id" value="{{ u.id }}">
+                    <button type="submit">Promote</button>
+                </form>
+            </td>
+            <td>
+                <form action="/admin/backup" method="post">
+                    <input type="hidden" name="user_id" value="{{ u.id }}">
+                    <button type="submit">Backup</button>
+                </form>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+
+</table>
+</div>
+{% endblock %}

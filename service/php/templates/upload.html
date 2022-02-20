@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Upload{% endblock %}
+{% block content %}
+<!-- <div class="container"> -->
+<div class="container has-text-centered">
+    <div class="column is-4 is-offset-4">
+        <h1 class="title" style="color: ghostwhite;">Upload</h1><br>
+        <div class="box">
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label class="has-text-success has-text-weight-bold is-clickable" for="file">
+                    <i class="fa fa-image" aria-hidden="true"></i>
+                    Choose a photo.
+                </label>
+                <input type="file" id="file" class="is-hidden" name="image" />
+                <div class="separator">OR</div>
+                <div class="field">
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="Paste a link." name="url">
+                        <span class="icon is-small is-left">
+                            <i class="fa fa-link has-text-grey-light" aria-hidden="true"></i>
+                        </span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+{% block footer %}
+<script>
+    var fileInput = document.querySelector('input[type=file]');
+    fileInput.addEventListener('change', function(e) {
+        document.querySelector('form').submit();
+    });
+</script>
+{% endblock %}
